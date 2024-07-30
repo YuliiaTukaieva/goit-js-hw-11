@@ -61,7 +61,7 @@ input#search-input {
   width: 272px;
   height: 40px;
   border-radius: 4px;
-  background: #fff;
+  background: #f0f34e;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -79,7 +79,7 @@ input#search-input:hover {
   padding: 8px 16px;
   width: 91px;
   height: 40px;
-  background: #1e5249;
+  background: #566abe;
 }
 
 img {
@@ -92,13 +92,14 @@ img {
 
 .gallery {
   list-style: none;
-  width: 1128px;
+  width: 100%;
   background: #fff;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 24px;
   margin: 0px auto;
+  padding-left: 156px;
 }
 
 .info {

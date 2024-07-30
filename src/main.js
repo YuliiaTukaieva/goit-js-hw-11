@@ -19,12 +19,12 @@ async function handleSearch(event) {
   const queryValue = form.elements['search-input'].value.trim().toLowerCase();
 
   if (queryValue === '') {
-    iziToast.error({ title: 'Error', message: 'Search field cannot be empty!' });
+    iziToast.error({ position: 'topRight', messageColor:  'white', backgroundColor: 'red', title: 'Error', message: 'Search field cannot be empty!' });
     return;
   }
 
   gallery.innerHTML = '';
-  iziToast.info({ title: 'Loading', message: 'Searching for images...' });
+  iziToast.info({ position: 'topRight', messageColor:  'white', backgroundColor: 'SpringGreen', title: 'Loading', message: 'Searching for images...' });
 
   try {
     const resJson = await getGallery(queryValue);
@@ -35,10 +35,11 @@ async function handleSearch(event) {
         // const lightbox = new SimpleLightbox('.gallery-item a', {});
         // lightbox.refresh();
     } else {
-        iziToast.warning({ title: 'No results', message: 'Sorry, there are no images matching your search query. Please try again!' });
+      
+        iziToast.warning({ position: 'topRight', messageColor:  'white', backgroundColor: 'coral', title: 'No results', message: 'Sorry, there are no images matching your search query. Please try again!' });
     }
   } catch (error) {
-     iziToast.error({ title: 'Error', message: 'Something went wrong. Please try again later.' });
+     iziToast.error({ position: 'topRight', messageColor:  'white', backgroundColor: 'Salmon', title: 'Error', message: 'Something went wrong. Please try again later.' });
   }
 }
 
