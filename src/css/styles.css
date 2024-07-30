@@ -23,3 +23,149 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.search-form {
+  width: 371px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 36px 534px 32px 534px;
+}
+
+input#search-input {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #808080;
+}
+
+input#search-input:hover {
+  border-color: #463011;
+}
+
+.search-form button[type='submit'] {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #1e5249;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 360px;
+  height: 200px;
+}
+
+.gallery {
+  list-style: none;
+  width: 1128px;
+  background: #fff;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0px auto;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  justify-content: center;
+  width: 360px;
+  height: 48px;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  border-left: 1px solid #808080;
+  background: #fff;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  color: #2e2f42;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+  display: flex;
+  flex-basis: min-content;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+user agent stylesheet p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
+.gallery-item {
+}
+
+.gallery-link {
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
